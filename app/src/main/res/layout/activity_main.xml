@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.miu.login.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgwalmart"
+        android:layout_width="364dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/download" />
+
+    <Button
+        android:layout_width="483dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:text="Sign In"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/lbsign"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="481dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:text="Sign to your account"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgwalmart" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="371dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="168dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email(required)"
+        android:textSize="8sp"
+        app:layout_constraintTop_toBottomOf="@+id/lbsign"
+        tools:layout_editor_absoluteX="61dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="151dp"
+        android:layout_height="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="PassWord(required)"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="291dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Don't have an Account"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="478dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="Create new Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
